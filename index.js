@@ -10,6 +10,7 @@ app.post('/hook', (req, res) => {
     const challenge = req.body.challenge;
     res.send({ challenge });
 
-    console.log(req.body);
+    console.log(req.body.event);
+    console.log('hola rous')
     res.status(200).end();
 })
